@@ -7,12 +7,6 @@
       "modelo": "modelo1"
     },
     {
-      "id": 2,
-      "conteudo": "Estudando Angular",
-      "autoria": "Dev Alura",
-      "modelo": "modelo2"
-    },
-    {
       "id": 3,
       "conteudo": "Angular é o melhor'",
       "autoria": "Dev Alura",
@@ -23,12 +17,6 @@
       "autoria": "dsadasd",
       "modelo": "modelo1",
       "id": 4
-    },
-    {
-      "conteudo": "teste",
-      "autoria": "terwrw",
-      "modelo": "modelo3",
-      "id": 5
     }
   ]
 }
