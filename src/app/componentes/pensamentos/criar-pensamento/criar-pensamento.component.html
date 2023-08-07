@@ -12,7 +12,7 @@
       placeholder="Digite o pensamento"
 
     >
-    <div class="mensagem__erro" *ngIf="formulario.get('conteudo')?.errors && formulario.get('conteudo')?.touched">
+    <div class="mensagem__erro" *ngIf="formulario.get('conteudo')?.errors && formulario.get('autoria')?.touched">
       Pensamento é obrigatório.
     </div>
     <label for="autoria">Autoria ou fonte</label>
@@ -98,7 +98,11 @@
       </div>
     </div>
     <div class="acoes">
-      <button (click)="criarPensamento()" class="botao">Salvar</button>
+      <button
+        [disabled]="!formulario.valid"
+        (click)="criarPensamento()"
+        [ngClass]="habilitarBotao()"
+        >Salvar</button>
       <button (click)="cancelar()" class="botao">Cancelar</button>
     </div>
   </form>
