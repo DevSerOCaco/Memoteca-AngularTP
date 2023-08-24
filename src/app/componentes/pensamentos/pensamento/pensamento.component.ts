@@ -1,5 +1,6 @@
+import { Pensamento } from './../pensamento';
 import { Component, Input, OnInit } from '@angular/core';
-import { Pensamento } from 'src/app/componentes/pensamentos/pensamento/pensamento';
+
 @Component({
   selector: 'app-pensamento',
   templateUrl: './pensamento.component.html',
